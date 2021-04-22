@@ -1,0 +1,35 @@
+{
+  "name": "clap-extension-switch-darkmode",
+  "version": "1.0.0",
+  "description": "If want to toggle, clap your hands",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cp manifest.json dist/",
+    "build": "parcel build content.js -d dist -o content --no-minify && npm run copy"
+  },
+  "author": {
+    "name": "Sascha Bajonczak",
+    "url": "https://blog.bajonczak.com"
+  },
+  "keywords": [
+    "tfjs",
+    "tensorflow",
+    "tensorflow.js",
+    "machine learning"
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "clang-format": "^1.2.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/runtime": "^7.13.10",
+    "@tensorflow-models/speech-commands": "^0.5.4",
+    "@tensorflow/tfjs": "^1.3.2"
+  }
+}
